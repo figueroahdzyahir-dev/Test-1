@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Not good basketball game.</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <section class="scorebar" aria-label="Marcador">
+        <div>
+          <span class="label">Tu equipo</span>
+          <strong id="homeScore">0</strong>
+        </div>
+        <div class="timer">
+          <span id="clock">60</span>
+          <small>seg</small>
+        </div>
+        <div>
+          <span class="label">Rivales</span>
+          <strong id="awayScore">0</strong>
+        </div>
+      </section>
+
+      <canvas id="game" aria-label="Not good basketball game."></canvas>
+
+      <section class="controls" aria-label="Controles">
+        <button id="actionButton" type="button">CLICK: brazos + salto | CLICK LARGO Y SUELTA: tirar</button>
+        <button id="restartButton" type="button">Reiniciar</button>
+      </section>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
